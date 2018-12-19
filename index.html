@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <style>
+        .container{
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa fa-user"></i> UserData</h1>
+        <div class="row justify-content-end">
+            <div class="col-md-5">
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="ชื่อ" id="input-search">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="btn-search" onclick="inputKeyword()"><i class="fa fa-search"></i> ค้นหา</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <table class="table table-light">
+            <thead class="thead-light">
+                <tr>
+                    <th>ชื่อ</th>
+                    <th>นามสกุล</th>
+                    <th>ชั่วโมงทำงาน</th>
+                    <th>รายได้</th>
+                </tr>
+            </thead>
+            <tbody id="content-data"></tbody>
+        </table>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
