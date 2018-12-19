@@ -1,4 +1,4 @@
  function calculateSalary(hour) {  
-        var salary = hour*300;
+        var salary = hour*1500;
         return salary;
     }
